@@ -140,7 +140,9 @@ Mode deteksi diatur lewat `INTENT_MODE`:
 │   └── mock_tickets.csv
 ├── tests/
 │   ├── test_offline.py     # unit test tanpa API key (pytest)
-│   └── run_scenarios.py    # skenario end-to-end ke endpoint yang berjalan
+│   ├── run_scenarios.py    # skenario end-to-end ke endpoint yang berjalan
+│   ├── check_key.py        # diagnosa API key dan ketersediaan model Gemini
+│   └── results.md          # log hasil pengujian skenario terakhir
 ├── Dockerfile
 ├── .dockerignore
 ├── .env.example
